@@ -170,7 +170,7 @@ input {
     font-size: larger;
 }
 #brandV:hover{
-    color: aquamarine;
+    color: red;
 }
 
 #btnMenu {
@@ -216,9 +216,9 @@ input {
 
     #Home{
         height: 700px;     
-        background-image: url(../img/Connan32.jpg);
+        background-image: url(../img/Connan32_2.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         background-attachment: fixed;
     }
@@ -283,7 +283,7 @@ input {
 
         background-image: url(../img/Connan32.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:contain;
         background-position: center center;
         background-attachment: fixed;
     }
