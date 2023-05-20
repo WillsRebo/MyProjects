@@ -215,7 +215,7 @@ input {
         background-image: url(../img/Connan32_2.jpg);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
+        background-position-x: center;
         background-attachment: fixed;
     }
 
@@ -283,7 +283,7 @@ input {
         background-image: url(../img/Connan32.jpg);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
+        background-position-x: center;
         background-attachment: fixed;
     }
 
