@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: instant;
-    width: 1024px;
+   
 }
 
 :root {
@@ -21,8 +21,7 @@ html {
 
 
 body {
-    background-color: var(--colorbgBody);
-    width: 100%;
+    background-color: var(--colorbgBody);   
     border: solid 1px;
 }
 
@@ -127,7 +126,7 @@ input {
 
 #secMenuH {
     width: 100%;
-    justify-content: space-between;
+    justify-content:space-around;
 
 }
 
@@ -141,7 +140,7 @@ input {
 
 
 .menu-vertical {
-    height: 100%;
+   
     padding: 10px;
     position: fixed;
     top: 0;
@@ -216,8 +215,7 @@ input {
 
 
     #Home{
-        height: 700px;
-        width: 100%;
+        height: 700px;     
         background-image: url(../img/Connan32.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -236,7 +234,7 @@ input {
     }
 
     .upAnchor {
-        bottom: 3px;
+        bottom: 8px;
         right: 25px;
     }
 
@@ -282,7 +280,7 @@ input {
         margin-top: -35px;
         margin-left: 310px;
         height: 700px;
-        width: 100%;
+
         background-image: url(../img/Connan32.jpg);
         background-repeat: no-repeat;
         background-size: cover;
