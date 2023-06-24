@@ -20,13 +20,6 @@ body {
     background-color: var(--colorbgBody);
 }
 
-h1.navbar-brand {
-    margin: 0 auto 0 0;
-    font-size: 25px;
-    font-family: var(--fontFamily);
-}
-
-
 h2 {
     font-family: var(--fontFamilyh2);
     padding-top: 10px;
@@ -41,7 +34,6 @@ h2 {
 }
 
 
-
 p {
     font-family: var(--fontFamily);
     text-align: justify;
@@ -49,19 +41,42 @@ p {
     height: 40px;
 }
 
-#brandUp {
+#brandH{
+    width: 120px;
+    margin-left: 15px;
+}
+
+#brandUp{
     margin: 15px 0 10px 10px;
     text-decoration: overline;
     letter-spacing: 7px;
-
 }
 
-#brandDw {
+#brandDw{
     text-align: end;
-    margin: 0 15px 10px 0;
+    margin-bottom: 30px;
     text-decoration: underline;
     letter-spacing: 7px;
 }
+#brandUpH{
+    text-decoration: overline;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: var(--fontFamily);
+}
+#brandDwH {
+    text-decoration: underline;
+    width: fit-content;
+    margin: -18px 0 0 17px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: var(--fontFamily);
+}
+
+
 
 article {
     text-align: center;
@@ -76,6 +91,19 @@ ul li a.nav-link {
     padding-left: 30px;
     padding-top: 15px;
 }
+
+ul li a.linkH{
+    font-size: 15PX;
+}
+
+th.table-text{
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 label,
 input {
@@ -94,11 +122,11 @@ input {
 /*navBars*/
 
 .nav .nav-link.active {
-    background-blend-mode: color-burn;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
     font-size: larger;
     font-weight: bold;
     letter-spacing: 7px;
-    color: red;
     text-align: center;
     padding-left: 50px;
 }
@@ -117,10 +145,10 @@ input {
 }
 
 #secMenuH {
+    height: 60px;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    justify-content: space-between;
+    justify-content: space-between;   
 
 }
 
@@ -131,6 +159,48 @@ input {
     overflow: hidden;
 }
 
+.neon {
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
+    animation: neon 2s ease-in-out ;
+}
+
+
+
+@keyframes neon {
+    0% {
+        opacity: 0.2;
+        text-shadow: none;
+    }
+
+    25% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
+    }
+    40% {
+        opacity: 0.5;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
+    }
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
+    }
+    75% {
+        opacity: 0.2;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #553838, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
+    }
+}
+
+tr th{
+    width: 50px;
+    vertical-align: middle;
+}
 
 .menu-vertical {
 
@@ -157,7 +227,8 @@ input {
 }
 
 .nav-link:hover {
-    color: red;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 200px #ff0000, 0 0 300px #ff0000;
     padding-left: 50px;
     font-weight: bold;
     font-size: larger;
@@ -171,6 +242,7 @@ input {
     margin-left: auto;
     height: 50px;
     max-width: 60px;
+    margin-top: -10px;
 }
 
 #h2Gal {
@@ -185,9 +257,11 @@ input {
     width: 100%;
 }
 
-div.col-md-10{
+div.col-md-10 {
     margin-bottom: 15px;
 }
+
+
 
 /*Anchor and footer*/
 
@@ -212,6 +286,8 @@ div.col-md-10{
 
     #Home {
         height: 700px;
+        width: 100%;
+        margin-left: 0;
         background-image: url(../img/Connan32_2.jpg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -278,11 +354,12 @@ div.col-md-10{
 
     #Home {
         margin-top: -35px;
-        margin-left: 310px;
+        margin-left: 120px;
         height: 700px;
+        width: 100%;
         background-image: url(../img/Connan32.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position-x: center;
         background-attachment: fixed;
     }
@@ -301,7 +378,10 @@ div.col-md-10{
     #publicidad,
     #contacto {
         margin-top: 30px;
-        margin-left: 320px;
+        padding-left: 230px;
+
+
+
     }
 
     #secGaleria {
